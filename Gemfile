@@ -22,7 +22,8 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-
+gem 'mysql2', '0.3.11'
+gem 'foreigner'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
