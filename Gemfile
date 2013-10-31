@@ -10,6 +10,11 @@ gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
+
+group :development do
+  gem 'better_errors', '1.0.1'
+  gem 'binding_of_caller', '0.7.2'
+end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -20,10 +25,15 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'devise'
+gem 'jquery-rails', '3.0.4'
+gem 'devise', '3.1.1'
 gem 'mysql2', '0.3.11'
-gem 'foreigner'
+gem 'foreigner', '1.4.2'
+gem 'rolify', '3.2.0'
+gem 'cancan', '1.6.10'
+gem 'i18n', '0.6.5'
+#gem 'twitter-bootstrap-rails', '~> 2.2.8'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

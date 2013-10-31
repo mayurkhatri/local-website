@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+  <tr>
+  	<th><%= t(:first_name) %></th>
+  	<th><%= t(:last_name) %></th>
+  	<th><%= t(:phone_number) %></th>
+  	<th><%= t(:email) %></th>
+  	<th><%= t(:category) %></th>
+  </tr>
+  <% unless @contacts.blank? %>
+    <%= @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.first_name %></td>
+        <td><%= contact.last_name %></td>
+        <td><%= contact.phone_number %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.category %></td>
+      </tr>
+    <%end%>
+  <%end%>
+ </table>

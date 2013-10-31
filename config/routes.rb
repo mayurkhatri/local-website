@@ -1,6 +1,10 @@
 LocalWebsite::Application.routes.draw do
   devise_for :users
 
+  devise_scope :user do 
+#    get "/signin" => "devise/sessions#new"    
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -50,6 +54,12 @@ LocalWebsite::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+  namespace :admin do
+    resources :users, :only => [:index, :new] do
+      resources :contacts, :only => :index
+    end
+  end
+
   root :to => 'admin/users#index'
 
   # See how all your routes lay out with "rake routes"

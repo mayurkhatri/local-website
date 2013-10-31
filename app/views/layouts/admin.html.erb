@@ -12,6 +12,8 @@
 <div id="user_nav" align="right">
   Signed in as <%= current_user.email %>. Not you?
   <%= link_to "sign out", destroy_user_session_path, :method => :delete %>
+
+  <%= render :partial => 'admin/shared/tabs' %>
  </div>
 <% end %>
 

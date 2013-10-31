@@ -3,3 +3,13 @@
 
 en:
   hello: "Hello world"
+  contacts: "Contacts"
+  location: "Location"
+  seva_groups: "Seva Groups"
+  website_contents: "Website Contents"
+  manage_roles: "Manage Roles"
+  first_name: "First Name"
+  last_name: "Last Name"
+  phone_number: "Phone Number"
+  email: "Email"
+  category: "Category"

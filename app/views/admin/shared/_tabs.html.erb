@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs">
+	<!---<li class="active"><a href="#"><%= t(:contacts) %></a></li> -->  
+  <li class="active"><%= link_to t(:contacts), admin_user_contacts_path(current_user.id) %></li>
+	<li><a href="/admin/users/new"><%= t(:location) %></a></li>
+	<li><a href="#"><%= t(:seva_groups) %></a></li>
+	<li><a href="#"><%= t(:website_contents) %></a></li>
+	<li><a href="#"><%= t(:manage_roles) %></a></li>
+</ul>
